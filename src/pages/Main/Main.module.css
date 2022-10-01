@@ -1,0 +1,33 @@
+.container {
+  width: 100vw;
+  height: calc(100vh - 93px);
+  background: linear-gradient(180deg, #1f2a63 0%, #17002f 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 84px;
+  letter-spacing: 4px;
+  color: #fff;
+}
+
+.info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #fff;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.wrapper {
+  display: grid;
+  margin-top: 128px;
+  margin-bottom: 246px;
+  margin-left: 157px;
+}

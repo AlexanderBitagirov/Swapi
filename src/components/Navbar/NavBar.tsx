@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import CustomLink from "../CustomLink/CustomLink";
 import styles from "./NavBar.module.css";
 import NavBarIcon from "./navbar.svg";
