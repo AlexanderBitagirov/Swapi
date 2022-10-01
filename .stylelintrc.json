@@ -2,8 +2,5 @@
   "extends": ["stylelint-config-standard",
               "stylelint-config-rational-order",
               "stylelint-prettier/recommended"],
-  "plugins": ["stylelint-order"],
-  "rules": {
-    "color-hex-case": "upper"
-  }
+  "plugins": ["stylelint-order"]
 }

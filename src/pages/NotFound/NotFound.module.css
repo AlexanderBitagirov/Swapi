@@ -1,0 +1,17 @@
+.error {
+  color: rgb(255 255 255 / 50%);
+  font-weight: 700;
+  font-size: 700px;
+  font-style: normal;
+  line-height: 818px;
+  letter-spacing: 4px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: #17002f;
+}

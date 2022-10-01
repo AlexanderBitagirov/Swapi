@@ -1,12 +1,12 @@
 import { withLayout } from "../../layout/Layout"
 
-const MainPage = () => {
+const CharactersPage = () => {
 
     return(
         <div>
-            123
+            321
         </div>
     )
 }
 
-export default withLayout(MainPage);
+export default withLayout(CharactersPage);
