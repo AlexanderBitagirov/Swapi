@@ -1,13 +1,13 @@
 .tag {
-  box-shadow: inset 0 -2px 0 rgb(0 0 0 / 18%);
-  border-radius: 11px;
+  display: inline-block;
+  padding: 5px 10px;
+  color: #212121;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   text-align: center;
-  padding: 5px 10px;
-  color: #212121;
-  display: inline-block;
+  border-radius: 11px;
+  box-shadow: inset 0 -2px 0 rgb(0 0 0 / 18%);
 }
 
 .green {
