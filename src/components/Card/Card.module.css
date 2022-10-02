@@ -1,0 +1,12 @@
+.card {
+  background: #f0f0f0;
+  border-radius: 8px;
+  width: 352px;
+  height: 137px;
+  filter: drop-shadow(4px 4px 4px rgba(33, 33, 33, 0.1));
+  cursor: pointer;
+}
+
+.card:active {
+  filter: none;
+}

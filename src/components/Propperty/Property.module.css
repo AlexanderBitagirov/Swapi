@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 6px;
+  color: #4b4b4b;
+  justify-self: center;
+}
