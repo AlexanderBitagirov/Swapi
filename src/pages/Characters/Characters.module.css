@@ -1,23 +1,23 @@
 .list {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
   margin-right: 157px;
   margin-left: 157px;
-  gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .item {
-  justify-self: center;
   align-self: center;
+  justify-self: center;
 }
 
 .name {
+  margin-top: 5px;
+  color: #212121;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  color: #212121;
-  text-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
-  margin-top: 5px;
+  text-shadow: 4px 4px 4px rgb(33 33 33 / 10%);
 }
 
 .content {
