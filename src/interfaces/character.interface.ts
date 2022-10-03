@@ -1,7 +1,7 @@
 export interface IGetCharacters {
     count: string;
-    next: string;
-    previos?: string;
+    next?: string;
+    previous?: string;
     results: ICharacter[];
 }
 

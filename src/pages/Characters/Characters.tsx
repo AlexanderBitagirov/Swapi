@@ -1,5 +1,6 @@
 import { ChangeEvent, useEffect, useMemo, useState } from "react";
 import CardList from "../../components/CardList/CardList";
+import Pagination from "../../components/Pagination/Pagination";
 import Spinner from "../../components/Spinner/Spinner";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import useDebounce from "../../hooks/useDebounce";
@@ -33,7 +34,7 @@ const CharactersPage = () => {
       {isLoading ? (
         <Spinner />
       ) : (
-        <div>
+        <div className={styles.wrapper}>
           <div className={styles.title}>
             {count} Peoples for you to choose your favorite
           </div>
@@ -47,6 +48,9 @@ const CharactersPage = () => {
             characters={characters.results}
             className={styles.results}
           />
+          {parseInt(characters.count) > 9 && (
+            <Pagination className={styles.leaf} previous={characters.previous} next={characters.next} />
+          )}
         </div>
       )}
     </div>
