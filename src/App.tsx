@@ -11,7 +11,7 @@ import { fetchCharacters } from "./store/reducers/ActionCreators";
 const App = () => {
   const dispatch = useAppDispatch();
   useEffect(() => {
-    dispatch(fetchCharacters());
+    dispatch(fetchCharacters("https://swapi.dev/api/people/?page=1"));
   }, []);
 
   return (

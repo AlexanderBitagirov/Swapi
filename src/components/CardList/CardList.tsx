@@ -6,8 +6,13 @@ import { Tag } from "../Tag/Tag";
 import { useState, useCallback } from "react";
 import Modal from "../Modal/Modal";
 import { ICharacter } from "../../interfaces/character.interface";
+import cn from "classnames";
 
-const CardList = ({ characters, ...props }: ICardListProps): JSX.Element => {
+const CardList = ({
+  characters,
+  className,
+  ...props
+}: ICardListProps): JSX.Element => {
   const [displayDialog, setDisplayDialog] = useState<boolean>(false);
   const [current, setCurrent] = useState<ICharacter>();
 
@@ -25,7 +30,7 @@ const CardList = ({ characters, ...props }: ICardListProps): JSX.Element => {
   };
 
   return (
-    <div className={styles.list} {...props}>
+    <div className={cn(styles.list, className)} {...props}>
       {characters.map((el, idx) => (
         <Card
           clickable={true}

@@ -1,17 +1,32 @@
-import { useCallback, useMemo, useState } from "react";
+import { ChangeEvent, useEffect, useMemo, useState } from "react";
 import CardList from "../../components/CardList/CardList";
-import Modal from "../../components/Modal/Modal";
 import Spinner from "../../components/Spinner/Spinner";
-import { useAppSelector } from "../../hooks/redux";
+import { useAppDispatch, useAppSelector } from "../../hooks/redux";
+import useDebounce from "../../hooks/useDebounce";
 import { withLayout } from "../../layout/Layout";
+import { fetchCharacters } from "../../store/reducers/ActionCreators";
 import styles from "./Characters.module.css";
 
 const CharactersPage = () => {
+  const dispatch = useAppDispatch();
+  const [value, setValue] = useState<string>("");
+  const debouncedValue = useDebounce<string>(value, 500);
+
   const { characters, isLoading } = useAppSelector(
     (state) => state.characterReducer
   );
 
   const count = useMemo(() => characters.count, [characters.count]);
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setValue(event.target.value);
+  };
+
+  useEffect(() => {
+    dispatch(
+      fetchCharacters(`https://swapi.dev/api/people/?search=${debouncedValue}`)
+    );
+  }, [debouncedValue]);
 
   return (
     <div className={styles.container}>
@@ -22,7 +37,16 @@ const CharactersPage = () => {
           <div className={styles.title}>
             {count} Peoples for you to choose your favorite
           </div>
-          <CardList characters={characters.results} />
+          <input
+            className={styles.search}
+            placeholder="find..."
+            onChange={handleChange}
+            value={value}
+          />
+          <CardList
+            characters={characters.results}
+            className={styles.results}
+          />
         </div>
       )}
     </div>
