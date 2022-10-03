@@ -1,0 +1,78 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 796px;
+  height: 371px;
+  display: grid;
+  grid-template-columns: 364px 1fr;
+  background: linear-gradient(180deg, #17002f 42.19%, #1f2a63 100%);
+  border-radius: 16px;
+}
+
+.wrapper {
+  background: #1f2a63;
+  border-radius: 16px 0 0 16px;
+  display: grid;
+  position: relative;
+}
+
+.image {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.tags {
+  padding-right: 10px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.name {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #fdfdfd;
+  text-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
+  margin-top: 30px;
+}
+
+.container {
+  margin-top: 13px;
+}
+
+.appearance {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  margin-left: 20px;
+  padding-top: 15px;
+}
+
+.info {
+  margin-left: 15px;
+}
+
+.properties {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 10px;
+  margin-top: 77px;
+}
+
+.card {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}

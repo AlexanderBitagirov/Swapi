@@ -1,12 +1,35 @@
 .card {
-  width: 352px;
-  height: 137px;
-  background: #f0f0f0;
   border-radius: 8px;
-  cursor: pointer;
   filter: drop-shadow(4px 4px 4px rgb(33 33 33 / 10%));
 }
 
 .card:active {
   filter: none;
+}
+
+.gray {
+  background: #f0f0f0;
+}
+
+.white {
+  background: #fdfdfd;
+}
+
+.s {
+  width: 83px;
+  height: 70px;
+}
+
+.m {
+  width: 264px;
+  height: 104px;
+}
+
+.l {
+  width: 352px;
+  height: 137px;
+}
+
+.clickable {
+  cursor: pointer;
 }

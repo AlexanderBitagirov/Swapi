@@ -7,7 +7,7 @@ export const fetchCharacters = () => async (dispatch: AppDispacth) => {
   try {
     dispatch(characterSlice.actions.characterFetching());
     const response = await axios.get<IGetCharacters>(
-      "https://swapi.dev/api/people/?page=2"
+      "https://swapi.dev/api/people/?page=1"
     );
     dispatch(characterSlice.actions.characterFetchingSuccess(response.data));
   } catch (e) {
