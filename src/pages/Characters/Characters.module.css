@@ -1,37 +1,5 @@
-.list {
+.container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  margin-right: 157px;
-  margin-left: 157px;
-}
-
-.item {
-  align-self: center;
-  justify-self: center;
-}
-
-.name {
-  margin-top: 5px;
-  color: #212121;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  text-shadow: 4px 4px 4px rgb(33 33 33 / 10%);
-}
-
-.content {
-  display: grid;
-  margin-left: 25px;
-}
-
-.properties {
-  display: grid;
-  grid-template-columns: max-content max-content;
-  gap: 11px;
-  margin-top: 12px;
-}
-
-.tags {
-  margin-top: 11px;
+  justify-content: center;
+  align-items: center;
 }
