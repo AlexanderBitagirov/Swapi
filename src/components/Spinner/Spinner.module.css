@@ -9,13 +9,13 @@
 }
 
 .spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 50px;
   height: 50px;
   border: 10px solid #a4a4b3; /* Light grey */
   border-top: 10px solid #1f2a63; /* Black */
   border-radius: 50%;
   animation: spinner 1.5s linear infinite;
-  position: absolute;
-  left: 50%;
-  top: 50%;
 }
